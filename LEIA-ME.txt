@@ -1,0 +1,21 @@
+ESCAPE ROOM — BUG DO MILÊNIO
+
+CÓDIGOS CONFIGURADOS
+
+Campo 1 = 1
+Campo 2 = 2
+Campo 3 = 3
+
+FUNCIONAMENTO
+
+- Os três campos aparecem lado a lado, na horizontal.
+- Todos podem ser preenchidos desde o início.
+- Cada campo possui um código próprio.
+- Ao acertar, o número fica salvo no input.
+- O input correto fica bloqueado.
+- O botão muda para "SALVO".
+- Quando os três códigos forem aceitos, a porta é desbloqueada.
+
+Para alterar os códigos depois, abra script.js e altere:
+
+const CODIGOS = ["1", "2", "3"];

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protocolo Y2K — Acesso à Porta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <main class="shell">
+    <section class="terminal">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">SISTEMA DE CONTENÇÃO // Y2K</p>
+          <h1>PROTOCOLO DE ACESSO</h1>
+        </div>
+
+        <div class="status" id="systemStatus">
+          <span class="dot"></span>
+          SISTEMA BLOQUEADO
+        </div>
+      </header>
+
+      <div class="warning">
+        <span>⚠</span>
+        <div>
+          <strong>ALERTA DE FALHA TEMPORAL</strong>
+          <p>
+            Três códigos independentes são necessários para restaurar o sistema.
+          </p>
+        </div>
+      </div>
+
+      <div class="clock-panel">
+        <span>DATA DO SISTEMA</span>
+        <strong id="fakeDate">31/12/1999 23:59:57</strong>
+      </div>
+
+      <section class="codes-grid" id="lockPanel">
+
+        <div class="code-card" id="step1">
+          <div class="code-number">01</div>
+          <h2>CÓDIGO 1</h2>
+          <p>Insira o primeiro código.</p>
+
+          <input
+            id="code1"
+            type="text"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="CÓDIGO 1"
+            maxlength="6"
+          />
+
+          <button id="btn1">VALIDAR</button>
+          <p class="feedback" id="feedback1"></p>
+        </div>
+
+        <div class="code-card" id="step2">
+          <div class="code-number">02</div>
+          <h2>CÓDIGO 2</h2>
+          <p>Insira o segundo código.</p>
+
+          <input
+            id="code2"
+            type="text"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="CÓDIGO 2"
+            maxlength="6"
+          />
+
+          <button id="btn2">VALIDAR</button>
+          <p class="feedback" id="feedback2"></p>
+        </div>
+
+        <div class="code-card" id="step3">
+          <div class="code-number">03</div>
+          <h2>CÓDIGO 3</h2>
+          <p>Insira o terceiro código.</p>
+
+          <input
+            id="code3"
+            type="text"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="CÓDIGO 3"
+            maxlength="6"
+          />
+
+          <button id="btn3">VALIDAR</button>
+          <p class="feedback" id="feedback3"></p>
+        </div>
+
+      </section>
+
+      <section class="door-screen hidden" id="doorScreen">
+        <div class="unlock-icon">
+          <div class="shackle"></div>
+          <div class="lock-body">✓</div>
+        </div>
+
+        <p class="eyebrow">AUTENTICAÇÃO CONCLUÍDA</p>
+        <h2>PORTA DESBLOQUEADA</h2>
+
+        <p class="unlock-text">
+          Os três códigos foram reconhecidos.<br>
+          O protocolo de segurança foi restaurado.
+        </p>
+
+        <div class="access-code">ACCESS GRANTED // 2000</div>
+      </section>
+
+      <footer>
+        <span>Y2K SECURITY NODE 04</span>
+        <span id="progress">CÓDIGOS: 0/3</span>
+        <span id="attempts">ERROS: 0</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
